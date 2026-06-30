@@ -1,4 +1,6 @@
 console.log("This is loaded from the external JS file");
+alert("This is an alert!! Click to continue.");
+
 var name = "Zacahryalion";
 let school = "NMHS";
 var fun_fact = "I'm an indie 3D Product Designer and Architect";
