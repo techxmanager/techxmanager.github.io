@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Music Chart</title>
+     <style>
+      body{
+       background-color: #0acefa;
+      }
+    </style>
+     <script src="https://cdn.plot.ly/plotly-3.6.0.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <center>
+      <h1>My Favorite Stromae songs</h1>
+      <div id="plot"></div>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ublchJYzhao?si=b3cmN1Cfe8-h50oW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VHoT4N43jK8?si=-7WSZCMRieQ7NGQk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/oiKj0Z_Xnjc?si=m1YW7QIQIQ8IfrtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p><a href="index.html">Return to the Home Page</a></p>
+      <hr>
+      <p>&copy; STEM Prep 2026</p>
+    </center>
+    <script>
+      var songs = ["Papaoutai", "Alors on Danse", "ta fete"];
+      var views = [1238048647, 545245249, 95481153]
+      var trace = {
+        x: songs,
+        y: views,
+        type: "bar"
+      };
+      var data = [trace];
+      var layout = {title: "My Favorite Stromae Songs"};
+      Plotly.newPlot("plot", data, layout);
+    </script>
+  </body>
+</html>
