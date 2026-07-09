@@ -5,4 +5,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
-L.marker(coordinates, {"title": "Wagwan from Jamaica!"}).bindPopup("<p>Wagwan from Jamaica!</p>").addTo(map);
+L.circle(coordinates, {"title": "Wagwan from Jamaica!",
+                      color: "black",
+                      fillColor: "#8cd9fa",
+                      radius: 90}).bindPopup("<p>Wagwan from Jamaica!</p>").addTo(map);
