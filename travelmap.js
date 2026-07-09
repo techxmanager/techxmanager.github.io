@@ -1,5 +1,5 @@
 // 18° N latitude and 77° W longitude
-var coordinates = [18, 77];
+var coordinates = [18.109581, -77.297508];
 var map = L.map('map').setView(coordinates, 13);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
